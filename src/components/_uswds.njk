@@ -3,11 +3,11 @@
   <head>
     <title>{{ _self.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ uswds.path }}/css/uswds.min.css">
+    <link rel="stylesheet" href="{{ uswds.css }}">
   </head>
   <body tabindex="0">
     {% block body %}{{ yield | safe }}{% endblock %}
-    <script src="{{ uswds.path }}/js/uswds.min.js"></script>
+    <script src="{{ uswds.js }}"></script>
     <script>
     window.addEventListener('load', function() {
       document.body.addEventListener('submit', function(e) {

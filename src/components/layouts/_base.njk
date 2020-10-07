@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ meta.title | default('USWDS Fractal example document') }}</title>
-    <link rel="stylesheet" href="{{ uswds.path }}/css/uswds.min.css">
+    <link rel="stylesheet" href="{{ uswds.css }}">
     {% block styles %}{% endblock %}
   </head>
   <body>
@@ -33,6 +33,6 @@
     {% block identifier -%}
       {% render '@identifier' %}
     {% endblock %}
-    <script src="{{ uswds.path }}/js/uswds.min.js"></script>
+    <script src="{{ uswds.js }}"></script>
   </body>
 </html>

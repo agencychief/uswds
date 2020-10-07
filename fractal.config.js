@@ -9,7 +9,9 @@ const context = {
     version: pkg.version
   },
   uswds: {
-    path: "../../dist"
+    path: "../../dist",
+    css: "../../dist/css/uswds.min.css",
+    js: "../../dist/js/uswds.min.js"
   }
 };
 
